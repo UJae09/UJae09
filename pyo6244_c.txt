@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include<time.h>
+#include <stdlib.h>
+
+int Max(int* p)
+{
+    for (int i = 0; i < p[i]; i++)
+    {
+        if (i < p[i])
+        {
+            i = p[i];
+        }
+    }
+}
+
+int main(void)
+{
+    srand(time(NULL));
+    int* ary = NULL;
+    int count = 0;
+
+    printf("요소개수 : ");
+    scanf_s("%d", &count);
+    ary = malloc(sizeof(int*) * count);
+    ary[count] = rand() % 91 + 10;
+
+    int max = Max(ary);
+    printf("최대값 : %d\n", max);
